@@ -120,7 +120,7 @@ You look out the window to see the heavy snow piled up against the door frame, p
 :: Kick mice {"position":"1250,600","size":"100,100"}
 To be continued!
 
-[[Restart->Intro]] 
+[[Restart->Intro]]
 
 
 :: Mice Intro {"position":"1600,300","size":"100,100"}
@@ -139,10 +139,16 @@ You look at your wife's eyes, questioning if it was her who said that statement.
 [[They're talking mice! Kick them!->Kick mice]]
 
 
-:: Next Day {"position":"1025,1325","size":"100,100"}
+:: NO {"position":"1425,1875","size":"100,100"}
+
+
+
+:: Next Day {"position":"1125,1425","size":"100,100"}
 To be continued!
 
-[[Restart->Intro]] 
+[[Restart->Intro]]
+
+[[new passage]]
 
 
 :: Pry Door {"position":"950,725","size":"100,100"}
@@ -162,7 +168,7 @@ As you venture deeper into the heart of the forest, the weather takes a sharp tu
 :: Rice sparing {"position":"1475,600","size":"100,100"}
 To be continued!
 
-[[Restart->Intro]] 
+[[Restart->Intro]]
 
 
 :: Stay Inside {"position":"1550,150","size":"100,100"}
@@ -177,3 +183,15 @@ The warmth quickly wraps itself around you, filling your nose with the delicious
 While you sit at the table, your wife exclaims, "The rice is ready!". She places down two small bowls of rice in front of you.
 
 As you prepare a yummy spoonful of rice for yourself, you suddenly hear a small, faint voice coming from the floor. [["Oh, I'm //so, so// hungry."->Mice Intro]]
+
+
+:: YES! {"position":"775,1900","size":"100,100"}
+
+
+
+:: new passage {"position":"1050,1875","size":"100,100"}
+Does it work?
+
+
+[[YES!]]
+[[NO]]
