@@ -1,0 +1,179 @@
+:: StoryTitle
+ARTG 120 Final Project Build
+
+
+:: StoryData
+{
+  "ifid": "AE215FAB-AF66-4406-AD26-CE7958176096",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: Back home {"position":"950,1025","size":"100,100"}
+Fueled by your instinct, you get up. Your heart is racing, adrenaline is coursing through your veins. Your legs, tired from carrying you forward, are renewed with urgerncy to make it home. Each step becomes a battle against the terrorizing cold and the treacherous terrain.
+
+Your hope of returning safely in to the arms of your wife is dropping by the minute. Every passing moment threatens your safety. [[You are slowly being engulfed by the frozen abyss.->Back home 2]]
+
+
+:: Back home 2 {"position":"875,1150","size":"100,100"}
+Quickly, hurry on forward!
+
+(set: $counter to 10)
+
+(live: 1s) [
+	(set: $counter to it-1)
+    (if: $counter is 0) [
+    	(go-to: "Continue 2")
+    ]
+    (replace: ?amount)[$counter]
+]
+
+
+(set: $clicks to 0)
+(link-repeat: "Press forward!") [
+	(set: $clicks to it+1)
+    (if: $clicks is 20)[(go-to: "Back home 3")]
+]
+
+
+:: Back home 3 {"position":"850,1300","size":"100,100"}
+Finally, with the little energy you have left, you look up onto the horizon of the forest and see your home. You have never been so happy to see the candle light shining through the windows, as you use every muscle you ahve left to push through and make it to the door. With trembling hands, you reach up to the door and knock. 
+
+You can hear your wife rushing to the door. As soon as she opens, you collapse inside.
+
+"AHHH!" She yells as she scrambles to pcik you up, assisting you to the [[small couch.->Next Day]]
+
+
+:: Continue {"position":"650,1050","size":"100,100"}
+With determination, you press on. Despite the pain shooting through your old knees, you finally locate the patches of sedge, carefully gathering them in your weathered hands. 
+
+Suddenly, a blizzard unleashes its fury and the world you begins to twirl and disorient you. What once looked like trees, suddenly turned into blurry white swirls sweeping across your eyes.
+
+[[You're plummeted into the ground and the sedge you once had, disappeared under a blanket of snow.->Continue 2]]
+
+
+:: Continue 2 {"position":"475,825","size":"100,100"}
+You tought you knew yourself and the path well enough, but the power of mother nature conspired against you today. 
+
+A quiet acceptance washes over you and you decide to lay down in the piles of snow. You gaze up into the forest cradled by the coldness of nature. Fatigue weighs on your eye lids as the tranquility of the forest holds you.
+
+As your body grows numb, the forests whispers, as if lullabies were being sung to you. You finally come to peace with the sleep hanging over you. As you finally close your eyes, you remember your wife. Oh...how you wish you could have stayed.
+
+The snow blanket covers the old man, cradling him in a gentle embrace and there in the winter forest, you found your final rest.
+
+''BAD ENDING''
+[[Restart?->Intro]]
+
+
+:: Exit door {"position":"975,375","size":"100,100"}
+心配しないで
+
+"Don't worry, I'll clear the snow and go find some sedge. We can use it to make hats to sell on New Years celebration day."
+
+"Please be careful, the snow looks awfully dangerous today. You're not the young man you once were," [[your wife responds.->Exit door 2]]
+
+
+:: Exit door 2 {"position":"975,550","size":"100,100"}
+''どやってドアを開けますか？ How do you open the door?''
+
+[[Gently pry the door open->Pry Door]]
+
+[[Use all your force to open the door.->Force Door]]
+
+
+:: Force Door {"position":"700,575","size":"100,100"}
+You force the door open and BOOM! The piles of snow come tumbling down into your house. The cold breeze takes over your entire room and you find yourself laying down on the piles of snow that have entered your house. Your wife, nowhere to be seen.
+
+Unable to move, you stay laid down on the snow. Try as you might, you cannot gather the strength to get out of the large pile of snow that overcome syou. Fatigue weighs on your eye lids as the tranquility of the forest holds you down.
+
+The snow blanket covers the old man, cradling him again in a gentle embrace and there inside your own home, you found your final rest.
+
+BAD ENDING 1
+[[Restart?->Intro]]
+
+
+:: Intro {"position":"725,175","size":"100,100"}
+"We're down to our last cup of rice," said your wife. She is standing over the almost empty bag of rice that was once full.
+
+Even from a distance, you can hear her stomach grumbling through the room. She looks more tired than yesterday, fatigue is building deeper in the lines of her [[face->Intro 2]].
+
+
+:: Intro 2 {"position":"875,175","size":"100,100"}
+You look around the vacant house, your gaze sweeping across the desolate room. You notice the spiders weaving their webs in the forgotten corners of the house. Suddenly, a large gust of wind rattles the house, [[the chilly wind sends shivers down your spine.->Intro 3]].
+
+
+:: Intro 3 {"position":"1100,175","size":"100,100"}
+With a weakend voice, your wife says, "This wekeend is New Years and...we don't have any rice or...any sedge to make our hats. What are we going to do?"
+
+You look out the window to see the heavy snow piled up against the door frame, preventing you from an exit.
+
+''何をするか？(What do you do?)''
+
+[[Use all your force to make an exit out the door in order to go collect sedge to make your hats.->Exit door]]
+
+[[Wait inside and cook the remaining rice you have left.->Stay Inside]]
+
+
+:: Kick mice {"position":"1250,600","size":"100,100"}
+To be continued!
+
+[[Restart->Intro]] 
+
+
+:: Mice Intro {"position":"1600,300","size":"100,100"}
+You look at your wife's eyes, questioning if it was her who said that statement. It was neither of you. With eyes wide open, you both lookd down at the ground and see a tiny mouse. 
+
+"Could it be?", you say to yourself. [[Did...did this baby mouse just...talk?!->Mice Intro 2]]
+
+
+:: Mice Intro 2 {"position":"1325,450","size":"100,100"}
+"Pleas sir, I do not ask for much but a few grains of rice to feed my family. We have not eaten for days, and the weather is too dangerous to venture out to find food. We barely have any scraps to eat," says the papa mouse.
+
+''What do you do?''
+
+[[Spare some grains of rice to them.->Rice sparing]]
+
+[[They're talking mice! Kick them!->Kick mice]]
+
+
+:: Next Day {"position":"1025,1325","size":"100,100"}
+To be continued!
+
+[[Restart->Intro]] 
+
+
+:: Pry Door {"position":"950,725","size":"100,100"}
+After what seemed like forever, you finally were able to pry the door open, slowly but safely. Bundled in layers of blankets, you stepped out into the forest. The forest stood tall and somber, its tress decorated with layers of frost.
+
+As you venture deeper into the heart of the forest, the weather takes a sharp turn. The wind becomes more icy, whipping you in the face with its cold breeze, tugging your clothing. [[Your fingers begin to feel numb, your breath begins to turn into wisps of smoke.->Pry Door 2]]
+
+
+:: Pry Door 2 {"position":"850,875","size":"100,100"}
+''Should you go back?''
+
+[[Go home.->Back home]]
+
+[[Keep going.->Continue]]
+
+
+:: Rice sparing {"position":"1475,600","size":"100,100"}
+To be continued!
+
+[[Restart->Intro]] 
+
+
+:: Stay Inside {"position":"1550,150","size":"100,100"}
+"We should wait, the snow looks quite strong today," you say to [[your wife->Stay Inside 2]]
+
+
+:: Stay Inside 2 {"position":"1325,300","size":"100,100"}
+Your wife begins the fire, places a pot of rice and water over it allowing for the rice to boil. 
+
+The warmth quickly wraps itself around you, filling your nose with the delicious scent of cooking rice.
+
+While you sit at the table, your wife exclaims, "The rice is ready!". She places down two small bowls of rice in front of you.
+
+As you prepare a yummy spoonful of rice for yourself, you suddenly hear a small, faint voice coming from the floor. [["Oh, I'm //so, so// hungry."->Mice Intro]]
