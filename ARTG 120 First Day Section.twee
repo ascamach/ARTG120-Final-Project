@@ -1,0 +1,214 @@
+:: StoryTitle
+ARTG 120 First Day Section
+
+
+:: StoryData
+{
+  "ifid": "E0B95CF7-7D00-441C-ADDA-089BE9180A5B",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Beginning",
+  "zoom": 1
+}
+
+
+:: Bad 1 {"position":"900,800","size":"100,100"}
+You decide to ignore the statues, prioritizing your safety over some inaminate objects. Surely, the gods won't punish you for taking care of yourself?
+
+[[After some decision-making, you make your way back home.->Bad 2]]
+
+
+:: Bad 2 {"position":"900,975","size":"100,100"}
+"Welcome back." Your wife greets you as you enter through the front door. "Did something happen in the village today?"
+
+"Nothing particular happened today, just a traveler passing by. I just gave him a new hat. Is something the matter?"
+
+"Not at all. I just suddenly had a sudden sinking feeling in my stomach, as if something bad happened. I'm glad to made it back safely," your wife claims, with a face of concern for your well-being.
+
+"I see..." -> (next day)
+
+
+:: Bad Return 1 {"position":"925,650","size":"100,100"}
+You decide to ignore the statues, as their presence begins to attack your sanity. You feel a bit more relieved with the statues out of your sight, but you can still sense their gaze on your back.
+
+[[With the wood you gathered in hand, you return to the safety of your home.->Bad Return 2]]
+
+
+:: Bad Return 2 {"position":"1050,650","size":"100,100"}
+"Welcome back, thank you for gathering the wood," your wife says, greeting you on your return. "Are you okay? You have a scared look on your face."
+
+With a slight shaky voice, "I'm doing okay, just felt some sort of pressure from the gods today."
+
+"The gods can sometimes be unkind to some, but I'm sure you're safe from their grasp. Come sit, I'll prepare our meal."
+
+You eat your dinner in calmness, preparing for the next day. -> (next day)
+
+
+:: Beginning {"position":"400,200","size":"100,100"}
+(css: "font-size: 250%")[The next day]
+
+{
+	(live: 5s) [
+    	(go-to: "Intro")
+        ]
+}
+
+
+:: From Village 1 {"position":"400,800","size":"100,100"}
+With a few opportunities, you were able to make some money for the mochi, but only enough for a few portions. Satisfied with your work, you decide to head back home.
+
+Upon passing through the trail, you notice the statues once more. This time around, the statues are covered with snow, barely being visible through the blankets of white. 
+
+The sun is setting soon, and you're not sure if you'll be able to make it back in time before dark.
+
+[[Clean the statues.->Good 1]]
+
+[[Ignore them.->Bad 1]]
+
+
+:: Good 1 {"position":"700,850","size":"100,100"}
+You decide to clean up the statues from the snowy prison. The statues become clearly visible again.
+
+To help prevent a similar situation from happening again, you decide to place hats on each statues. However, you realize you only have 1 good hat remaining, as the others towards the bottom of the basket were mangled from the storm. You place your last hat on one of the statues.
+
+[[After your hard work, you head back home again, with enough time to spare.->Good 2]]
+
+
+:: Good 2 {"position":"700,1000","size":"100,100"}
+"Welcome back". Your wife greets you back home after the hike back. 
+
+"You seem to be in a good mood today. Did something happen in the village?"
+
+In a surprised tone, you respond. "I don't feel particularly special. A traveler was passing by, so I offered him a hat. Is...there something on my face?"
+
+"No, no, you just seem more...whole, or complete? Something just seems good about your demeanor."
+
+"I see..." -> (next day)
+
+
+:: Good Return 1 {"position":"1050,525","size":"100,100"}
+Despite the terrifying feeling in your gut, you clear statues from the grasp of the snow. Their gaze still emits the same aura, but you feel less guilty about leaving them be.
+
+You decide to place your hat atop one of the statues, in hopes of preventing at least one statue from being smothered from the heavy snow.
+
+[[With your wood in hand, you finally return home->Good Return 2]]
+
+
+:: Good Return 2 {"position":"1175,525","size":"100,100"}
+As you enter through the front, your wife greets you on your return. "Welcome back, thank you for gathering the wood". With a concerned look, she notices your frightened face, "Are you okay? You look like you just witnessed a ghost passing by..."
+
+"I feel like I've been tested today, as if the gods forced me to make a decision..."
+
+"Well, I'm sure you made the right decision today, and the gods may even reward you! Come sit, I'll prepare dinner."
+
+You finally rest after escaping the heavy pressure from the statues. Having enjoyed your wife's dinner and lying down onto the futon, you find yourself relieved from your stress as you slowly succumb to sleep.
+
+
+:: Inside 1 {"position":"800,350","size":"100,100"}
+"I think I'll remain here today. A lot happened yesterday, and I would like to get rest up my body a bit."
+
+"I understand. Would you mind helping me clean up the house, then?"
+
+[["Of course, I'll be glad to help."->Inside 2]]
+
+
+:: Inside 2 {"position":"975,350","size":"100,100"}
+In a few hours time, the house look much more pleasant than before. With the remaining supplies you had, you restored the house back to its former glory.
+
+Your wife returns from her voyage towards the village north, with only a new bag of rice and small portions of fish.
+
+"The sun seems to be setting soon, I should start preparing some dinner. Do you mind grabbing some wood for the firepit?", your wife requests.
+
+[["Sure, I'll head out right now."->Outside 1]]
+
+
+
+
+
+:: Intro {"position":"550,200","size":"100,100"}
+You wake up to the next day, your body sore from the events of yesterday. Rising up from the soothing futon laid on the tatami mats, you notice the outside looking more peaceful than the day before.
+
+[[After getting up, you move towards the main room->Intro 2]]
+
+
+:: Intro 2 {"position":"700,200","size":"100,100"}
+"Good morning," your wife greets you upon exiting the bedroom. "The day is much pleasant this time around."
+
+"Indeed it is. We won't be battling Mother Nature today," you respond.
+
+"Do you plan on selling your umbrella hats today? The walk towards the village seems to be smooth," your wife inquires?
+
+What will you do?
+
+[[Go to the village->Village 1]]
+
+[[Stay inside->Inside 1]]
+
+
+:: Outside 1 {"position":"775,575","size":"100,100"}
+Grabbing one of your hand-crafted straw umbrella hats, you set out to gather pieces of wood for the firepit. You wander quite a bit, collecting as many pieces as you can for future usage.
+
+As you walk along the trail, you notice the snow-covered Jizou statues, the guardians of children and travelers. Although you passed those statues numerous times when you head to the village, this time seems...different. The eyes of the statues almost intimidate you, taunting you in a sense to come towards them.
+
+[[Approach the statues.->Statues 1]]
+
+[[Return back home.->Bad Return 1]]
+
+
+:: Statues 1 {"position":"925,525","size":"100,100"}
+You approach the statues, with their large, frightening aura. You've never felt something like this before.
+
+You are afraid to even interact with them, but they pressure you to stay. You decide to...
+
+[[Leave the statues be.->Bad Return 1]]
+
+[[Clean the statues.->Good Return 1]]
+
+
+:: Stranger 1 {"position":"400,625","size":"100,100"}
+You approach the stranger, offering a newly-made hat for him.
+
+"Ah, thank you, kind sir." He seems to appreciate your gesture. "Do you happen to live in this village?"
+
+"I do not, I come here often from the hills up there," as you point towards the north. [["Where are you from?", you ask.->Stranger 2]]
+
+
+:: Stranger 2 {"position":"600,650","size":"100,100"}
+"I'm actually a traveler, looking to explore the vast lands of Japan. It's been quite a journey."
+
+"Well, I hope you enjoy your stay here," you respond.
+
+"I do have one question," the traveler says. "Do you happen to know of any...gods...er...deities or some similar beings? I hear the gods here can be a bit...judgemental, in a sense."
+
+With a perplexed look on your face, "I personally don't know any god, but I am aware of the statues of the gods towards the north. I actually pass by it everytime I enter the village."
+
+"I see...well, thank you for your kindness. I have rested long enough, I think I should get going soon". The traveler paces off, disappearing into the distance in only a few seconds.
+
+"Ah...", you realize something very crucial. [["He forgot to pay me..."->From Village 1]]
+
+
+:: Village 1 {"position":"525,350","size":"100,100"}
+"I'll try and head to the village today. We'll need some money to buy mochi for New Year's soon."
+
+"I had completely forgotten about about New Year's, so much has happened this year. Good luck in the village, I'll be trying to clean up the house and purchase some goods from the village north."
+
+You ready your basket, filled with the straw umbrella hats you hand-crafted some time ago. They still seem to be in good shape.
+
+[[After saying your goodbye and getting ready, you head down to the village->Village 2]]
+
+
+:: Village 2 {"position":"400,475","size":"100,100"}
+The sun beams rays of light that make the white sheets of snow shine with gold. The trees of the forest give frequent pockets of shade between each golden beam.
+
+As you continue down towards the village, you notice the Jizo statues, guardians of children and travelers. Although you have passed this trail many times and have seen these statues a countless number of times, this time feels...strange, somewhat ominous.
+
+[[Although you are quite curious about the statues, you continue to the village.->Village 3]]
+
+
+:: Village 3 {"position":"600,500","size":"100,100"}
+After a short while through the fresh snow, you finally arrive at the entrance of the village. The houses are covered in blankets of snow, only specks of the brown lumber and light from the campfires arise from the deep white. 
+
+Amongst the houses are adults shoveling the snow from the roads, others gathering wood for their firepits, as well as children playing around with the snow. However, one sight catches your eye: a person sitting on a bench. He wear a beaten coat, but most importantly, dons an umbrella hat with a significant portion missing.
+
+[[Approach the stranger->Stranger 1]]
+
