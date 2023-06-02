@@ -1,0 +1,409 @@
+:: StoryTitle
+ARTG 120 Final Project Build
+
+
+:: StoryData
+{
+  "ifid": "AE215FAB-AF66-4406-AD26-CE7958176096",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: \ Help Them 2 {"position":"2000,700","size":"100,100"}
+After what seems like forever, you call it a night. The mice hurry back to their hole and you head straight to bed. Although you can hear your stomach grumbling, you decide to sleep it off, and hope that tomorrow will be a better day to go out and [[collect sedge. ->next day]]
+
+
+:: \ insert next chapter {"position":"2000,1225","size":"100,100"}
+To be continued! [connect next persons story]
+
+
+:: Back home {"position":"950,1025","size":"100,100"}
+Fueled by your instinct, you get up. Your heart is racing, adrenaline is coursing through your veins. Your legs, tired from carrying you forward, are renewed with urgerncy to make it home. Each step becomes a battle against the terrorizing cold and the treacherous terrain.
+
+Your hope of returning safely in to the arms of your wife is dropping by the minute. Every passing moment threatens your safety. [[You are slowly being engulfed by the frozen abyss.->Back home 2]]
+
+
+:: Back home 2 {"position":"850,1200","size":"100,100"}
+Quickly, hurry on forward!
+
+(set: $counter to 10)
+
+(live: 1s) [
+	(set: $counter to it-1)
+    (if: $counter is 0) [
+    	(go-to: "Continue 2")
+    ]
+    (replace: ?amount)[$counter]
+]
+
+
+(set: $clicks to 0)
+(link-repeat: "Press forward!") [
+	(set: $clicks to it+1)
+    (if: $clicks is 20)[(go-to: "Back home 3")]
+]
+
+
+:: Back home 3 {"position":"1025,1200","size":"100,100"}
+Finally, with the little energy you have left, you look up onto the horizon of the forest and see your home. You have never been so happy to see the candle light shining through the windows, as you use every muscle you ahve left to push through and make it to the door. With trembling hands, you reach up to the door and knock. 
+
+You can hear your wife rushing to the door. As soon as she opens, you collapse inside.
+
+"AHHH!" She yells as she scrambles to pick you up, assisting you to the [[small couch.->Stay Inside 2]]
+
+
+:: Continue {"position":"650,1050","size":"100,100"}
+With determination, you press on. Despite the pain shooting through your old knees, you finally locate the patches of sedge, carefully gathering them in your weathered hands. 
+
+Suddenly, a blizzard unleashes its fury and the world you begins to twirl and disorient you. What once looked like trees, suddenly turned into blurry white swirls sweeping across your eyes.
+
+[[You're plummeted into the ground and the sedge you once had, disappeared under a blanket of snow.->Continue 2]]
+
+
+:: Continue 2 {"position":"475,825","size":"100,100"}
+You tought you knew yourself and the path well enough, but the power of mother nature conspired against you today. 
+
+A quiet acceptance washes over you and you decide to lay down in the piles of snow. You gaze up into the forest cradled by the coldness of nature. Fatigue weighs on your eye lids as the tranquility of the forest holds you.
+
+As your body grows numb, the forests whispers, as if lullabies were being sung to you. You finally come to peace with the sleep hanging over you. As you finally close your eyes, you remember your wife. Oh...how you wish you could have stayed.
+
+The snow blanket covers the old man, cradling him in a gentle embrace and there in the winter forest, you found your final rest.
+
+''BAD ENDING''
+[[Restart?->Intro]]
+
+
+:: Exit door {"position":"975,375","size":"100,100"}
+心配しないで
+
+"Don't worry, I'll clear the snow and go find some sedge. We can use it to make hats to sell on New Years celebration day."
+
+"Please be careful, the snow looks awfully dangerous today. You're not the young man you once were," [[your wife responds.->Exit door 2]]
+
+
+:: Exit door 2 {"position":"1050,550","size":"100,100"}
+''どやってドアを開けますか？ How do you open the door?''
+
+[[Gently pry the door open->Pry Door]]
+
+[[Use all your force to open the door.->Force Door]]
+
+
+:: Force Door {"position":"700,575","size":"100,100"}
+You force the door open and BOOM! The piles of snow come tumbling down into your house. The cold breeze takes over your entire room and you find yourself laying down on the piles of snow that have entered your house. Your wife, nowhere to be seen.
+
+Unable to move, you stay laid down on the snow. Try as you might, you cannot gather the strength to get out of the large pile of snow that overcome syou. Fatigue weighs on your eye lids as the tranquility of the forest holds you down.
+
+The snow blanket covers the old man, cradling him again in a gentle embrace and there inside your own home, you found your final rest.
+
+BAD ENDING 1
+[[Restart?->Intro]]
+
+
+:: Intro {"position":"625,50","size":"100,100"}
+"We're down to our last cup of rice," said your wife. She is standing over the almost empty bag of rice that was once full.
+
+Even from a distance, you can hear her stomach grumbling through the room. She looks more tired than yesterday, fatigue is building deeper in the lines of her [[face->Intro 2]].
+
+
+:: Intro 2 {"position":"900,150","size":"100,100"}
+You look around the vacant house, your gaze sweeping across the desolate room. You notice the spiders weaving their webs in the forgotten corners of the house. Suddenly, a large gust of wind rattles the house, [[the chilly wind sends shivers down your spine.->Intro 3]].
+
+
+:: Intro 3 {"position":"1075,225","size":"100,100"}
+With a weakend voice, your wife says, "This wekeend is New Years and...we don't have any rice or...any sedge to make our hats. What are we going to do?"
+
+You look out the window to see the heavy snow piled up against the door frame, preventing you from an exit.
+
+''何をするか？(What do you do?)''
+
+[[Use all your force to make an exit out the door in order to go collect sedge to make your hats.->Exit door]]
+
+[[Wait inside and cook the remaining rice you have left.->Stay Inside]]
+
+
+:: Kick mice {"position":"1800,550","size":"100,100"}
+You look at your wife, and you can feel your heart sink.... you know what you must do. BAAMMM. You immediately send the family of mice flying out the door. There is no way that you were allowing these mice to take your food. 
+
+[[Restart->Intro]]
+
+
+:: Mice Intro {"position":"1850,225","size":"100,100"}
+You look at your wife's eyes, questioning if it was her who said that statement. It was neither of you. With eyes wide open, you both lookd down at the ground and see a tiny mouse. 
+
+"Could it be?", you say to yourself. [[Did...did this baby mouse just...talk?!->Mice Intro 2]]
+
+
+:: Mice Intro 2 {"position":"1875,400","size":"100,100"}
+"Pleas sir, I do not ask for much but a few grains of rice to feed my family. We have not eaten for days, and the weather is too dangerous to venture out to find food. We barely have any scraps to eat," says the papa mouse.
+
+''What do you do?''
+
+[[Spare some grains of rice to them.->Rice sparing]]
+
+[[They're talking mice! Kick them!->Kick mice]]
+
+
+:: Pry Door {"position":"950,725","size":"100,100"}
+After what seemed like forever, you finally were able to pry the door open, slowly but safely. Bundled in layers of blankets, you stepped out into the forest. The forest stood tall and somber, its tress decorated with layers of frost.
+
+As you venture deeper into the heart of the forest, the weather takes a sharp turn. The wind becomes more icy, whipping you in the face with its cold breeze, tugging your clothing. [[Your fingers begin to feel numb, your breath begins to turn into wisps of smoke.->Pry Door 2]]
+
+
+:: Pry Door 2 {"position":"850,875","size":"100,100"}
+''Should you go back?''
+
+[[Go home.->Back home]]
+
+[[Keep going.->Continue]]
+
+
+:: Rice sparing {"position":"2000,525","size":"100,100"}
+You look up at your wife, and you can feel your heart sink. They too are struggling to make ends meet and realize, that you aren’t that different from the family of mice after all. 
+
+You grab what little rice you have and place it on the ground. Immediately, the momma mouse cries tears of joy.
+
+“Thank you, thank you, THANK YOU!” She cries. Together, that night, you have dinner with the mice, sharing stories, laughing, and finally feeling happiness at the thought of having company once again in your [[small home.-> Help Them 2]]
+
+
+:: Stay Inside {"position":"1225,325","size":"100,100"}
+"We should wait, the snow looks quite strong today," you say to [[your wife->Stay Inside 2]]
+
+
+:: Stay Inside 2 {"position":"1450,400","size":"100,100"}
+Your wife begins the fire, places a pot of rice and water over it allowing for the rice to boil. 
+
+The warmth quickly wraps itself around you, filling your nose with the delicious scent of cooking rice.
+
+While you sit at the table, your wife exclaims, "The rice is ready!". She places down two small bowls of rice in front of you.
+
+As you prepare a yummy spoonful of rice for yourself, you suddenly hear a small, faint voice coming from the floor. [["Oh, I'm //so, so// hungry."->Mice Intro]]
+
+
+:: next day {"position":"2000,825","size":"100,100"}
+You wake up to the sound of mice scurrying around your room, their tiny paws running around. Suddenly, you realize whats at the middle of the room....
+
+Sedge!
+
+While you were busy sleeping, the mice were out collecting sedge for you as they were thankful for feeding them last night, a token of gratitude. 
+
+Poppa mouse comes to you and says, “Thank you, your food last night gave us energy to go out and collect your sedge. Please, take this gift as a big thank you from not only from me.... But from my [[entire family.”->nextday2]]
+
+
+:: nextday2 {"position":"2000,950","size":"100,100"}
+Suddenly, it strikes you. The village is celebrating today and there will be a ton of people heading down to party! 
+
+Inspired by the mice offering, you realize that its your chance to shine. With this shock of excitement running through your body, you gather the sedge and get straight to work. Using your nimble fingers, you carefully weave and fashioned the sedge into beautiful hats, each one uniquely crafted with love and attention to detail. 
+
+The mice sit in awe as the hats begin to take shape and before you know it, the morning sun rose higher into the sky. After crafting a exquisite collection of sedge hats, you feel eager to go out and sell your [[hats to the village. ->village day]]
+
+
+:: village day {"position":"2000,1075","size":"100,100"}
+You give your wife a kiss goodbye with a big hug, and you look down to the mice, giving them one big thank you. 
+
+You back your bag full of sedge hats and place them on your back. You walk out the door and immediately take a big whiff of the fresh mountain air. You descend the mountain all the way down to the village, step by step taking in the beauty of mother nature. 
+
+After what seemed like hours, you finally reach the village where tons of [[people are gathering. -> insert next chapter]]
+
+:: Bad 1 {"position":"900,800","size":"100,100"}
+You decide to ignore the statues, prioritizing your safety over some inaminate objects. Surely, the gods won't punish you for taking care of yourself?
+
+[[After some decision-making, you make your way back home.->Bad 2]]
+
+
+:: Bad 2 {"position":"900,975","size":"100,100"}
+"Welcome back." Your wife greets you as you enter through the front door. "Did something happen in the village today?"
+
+"Nothing particular happened today, just a traveler passing by. I just gave him a new hat. Is something the matter?"
+
+"Not at all. I just suddenly had a sudden sinking feeling in my stomach, as if something bad happened. I'm glad to made it back safely," your wife claims, with a face of concern for your well-being.
+
+"I see..." -> (next day)
+
+
+:: Bad Return 1 {"position":"925,650","size":"100,100"}
+You decide to ignore the statues, as their presence begins to attack your sanity. You feel a bit more relieved with the statues out of your sight, but you can still sense their gaze on your back.
+
+[[With the wood you gathered in hand, you return to the safety of your home.->Bad Return 2]]
+
+
+:: Bad Return 2 {"position":"1050,650","size":"100,100"}
+"Welcome back, thank you for gathering the wood," your wife says, greeting you on your return. "Are you okay? You have a scared look on your face."
+
+With a slight shaky voice, "I'm doing okay, just felt some sort of pressure from the gods today."
+
+"The gods can sometimes be unkind to some, but I'm sure you're safe from their grasp. Come sit, I'll prepare our meal."
+
+You eat your dinner in calmness, preparing for the next day. -> (next day)
+
+
+:: Beginning {"position":"400,200","size":"100,100"}
+(css: "font-size: 250%")[The next day]
+
+{
+	(live: 5s) [
+    	(go-to: "Intro")
+        ]
+}
+
+
+:: From Village 1 {"position":"400,800","size":"100,100"}
+With a few opportunities, you were able to make some money for the mochi, but only enough for a few portions. Satisfied with your work, you decide to head back home.
+
+Upon passing through the trail, you notice the statues once more. This time around, the statues are covered with snow, barely being visible through the blankets of white. 
+
+The sun is setting soon, and you're not sure if you'll be able to make it back in time before dark.
+
+[[Clean the statues.->Good 1]]
+
+[[Ignore them.->Bad 1]]
+
+
+:: Good 1 {"position":"700,850","size":"100,100"}
+You decide to clean up the statues from the snowy prison. The statues become clearly visible again.
+
+To help prevent a similar situation from happening again, you decide to place hats on each statues. However, you realize you only have 1 good hat remaining, as the others towards the bottom of the basket were mangled from the storm. You place your last hat on one of the statues.
+
+[[After your hard work, you head back home again, with enough time to spare.->Good 2]]
+
+
+:: Good 2 {"position":"700,1000","size":"100,100"}
+"Welcome back". Your wife greets you back home after the hike back. 
+
+"You seem to be in a good mood today. Did something happen in the village?"
+
+In a surprised tone, you respond. "I don't feel particularly special. A traveler was passing by, so I offered him a hat. Is...there something on my face?"
+
+"No, no, you just seem more...whole, or complete? Something just seems good about your demeanor."
+
+"I see..." -> (next day)
+
+
+:: Good Return 1 {"position":"1050,525","size":"100,100"}
+Despite the terrifying feeling in your gut, you clear statues from the grasp of the snow. Their gaze still emits the same aura, but you feel less guilty about leaving them be.
+
+You decide to place your hat atop one of the statues, in hopes of preventing at least one statue from being smothered from the heavy snow.
+
+[[With your wood in hand, you finally return home->Good Return 2]]
+
+
+:: Good Return 2 {"position":"1175,525","size":"100,100"}
+As you enter through the front, your wife greets you on your return. "Welcome back, thank you for gathering the wood". With a concerned look, she notices your frightened face, "Are you okay? You look like you just witnessed a ghost passing by..."
+
+"I feel like I've been tested today, as if the gods forced me to make a decision..."
+
+"Well, I'm sure you made the right decision today, and the gods may even reward you! Come sit, I'll prepare dinner."
+
+You finally rest after escaping the heavy pressure from the statues. Having enjoyed your wife's dinner and lying down onto the futon, you find yourself relieved from your stress as you slowly succumb to sleep.
+
+
+:: Inside 1 {"position":"800,350","size":"100,100"}
+"I think I'll remain here today. A lot happened yesterday, and I would like to get rest up my body a bit."
+
+"I understand. Would you mind helping me clean up the house, then?"
+
+[["Of course, I'll be glad to help."->Inside 2]]
+
+
+:: Inside 2 {"position":"975,350","size":"100,100"}
+In a few hours time, the house look much more pleasant than before. With the remaining supplies you had, you restored the house back to its former glory.
+
+Your wife returns from her voyage towards the village north, with only a new bag of rice and small portions of fish.
+
+"The sun seems to be setting soon, I should start preparing some dinner. Do you mind grabbing some wood for the firepit?", your wife requests.
+
+[["Sure, I'll head out right now."->Outside 1]]
+
+
+
+
+
+:: Intro {"position":"550,200","size":"100,100"}
+You wake up to the next day, your body sore from the events of yesterday. Rising up from the soothing futon laid on the tatami mats, you notice the outside looking more peaceful than the day before.
+
+[[After getting up, you move towards the main room->Intro 2]]
+
+
+:: Intro 2 {"position":"700,200","size":"100,100"}
+"Good morning," your wife greets you upon exiting the bedroom. "The day is much pleasant this time around."
+
+"Indeed it is. We won't be battling Mother Nature today," you respond.
+
+"Do you plan on selling your umbrella hats today? The walk towards the village seems to be smooth," your wife inquires?
+
+What will you do?
+
+[[Go to the village->Village 1]]
+
+[[Stay inside->Inside 1]]
+
+
+:: Outside 1 {"position":"775,575","size":"100,100"}
+Grabbing one of your hand-crafted straw umbrella hats, you set out to gather pieces of wood for the firepit. You wander quite a bit, collecting as many pieces as you can for future usage.
+
+As you walk along the trail, you notice the snow-covered Jizou statues, the guardians of children and travelers. Although you passed those statues numerous times when you head to the village, this time seems...different. The eyes of the statues almost intimidate you, taunting you in a sense to come towards them.
+
+[[Approach the statues.->Statues 1]]
+
+[[Return back home.->Bad Return 1]]
+
+
+:: Statues 1 {"position":"925,525","size":"100,100"}
+You approach the statues, with their large, frightening aura. You've never felt something like this before.
+
+You are afraid to even interact with them, but they pressure you to stay. You decide to...
+
+[[Leave the statues be.->Bad Return 1]]
+
+[[Clean the statues.->Good Return 1]]
+
+
+:: Stranger 1 {"position":"400,625","size":"100,100"}
+You approach the stranger, offering a newly-made hat for him.
+
+"Ah, thank you, kind sir." He seems to appreciate your gesture. "Do you happen to live in this village?"
+
+"I do not, I come here often from the hills up there," as you point towards the north. [["Where are you from?", you ask.->Stranger 2]]
+
+
+:: Stranger 2 {"position":"600,650","size":"100,100"}
+"I'm actually a traveler, looking to explore the vast lands of Japan. It's been quite a journey."
+
+"Well, I hope you enjoy your stay here," you respond.
+
+"I do have one question," the traveler says. "Do you happen to know of any...gods...er...deities or some similar beings? I hear the gods here can be a bit...judgemental, in a sense."
+
+With a perplexed look on your face, "I personally don't know any god, but I am aware of the statues of the gods towards the north. I actually pass by it everytime I enter the village."
+
+"I see...well, thank you for your kindness. I have rested long enough, I think I should get going soon". The traveler paces off, disappearing into the distance in only a few seconds.
+
+"Ah...", you realize something very crucial. [["He forgot to pay me..."->From Village 1]]
+
+
+:: Village 1 {"position":"525,350","size":"100,100"}
+"I'll try and head to the village today. We'll need some money to buy mochi for New Year's soon."
+
+"I had completely forgotten about about New Year's, so much has happened this year. Good luck in the village, I'll be trying to clean up the house and purchase some goods from the village north."
+
+You ready your basket, filled with the straw umbrella hats you hand-crafted some time ago. They still seem to be in good shape.
+
+[[After saying your goodbye and getting ready, you head down to the village->Village 2]]
+
+
+:: Village 2 {"position":"400,475","size":"100,100"}
+The sun beams rays of light that make the white sheets of snow shine with gold. The trees of the forest give frequent pockets of shade between each golden beam.
+
+As you continue down towards the village, you notice the Jizo statues, guardians of children and travelers. Although you have passed this trail many times and have seen these statues a countless number of times, this time feels...strange, somewhat ominous.
+
+[[Although you are quite curious about the statues, you continue to the village.->Village 3]]
+
+
+:: Village 3 {"position":"600,500","size":"100,100"}
+After a short while through the fresh snow, you finally arrive at the entrance of the village. The houses are covered in blankets of snow, only specks of the brown lumber and light from the campfires arise from the deep white. 
+
+Amongst the houses are adults shoveling the snow from the roads, others gathering wood for their firepits, as well as children playing around with the snow. However, one sight catches your eye: a person sitting on a bench. He wear a beaten coat, but most importantly, dons an umbrella hat with a significant portion missing.
+
+[[Approach the stranger->Stranger 1]]
