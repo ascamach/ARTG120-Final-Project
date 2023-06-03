@@ -1,0 +1,774 @@
+:: StoryTitle
+ARTG 120 Day1 To Day3 Combined
+
+
+:: StoryData
+{
+  "ifid": "AE215FAB-AF66-4406-AD26-CE7958176096",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Intro",
+  "tag-colors": {
+    "Day-1": "red"
+  },
+  "zoom": 1
+}
+
+
+:: \ Help Them 2 {"position":"1925,700","size":"100,100"}
+After what seems like forever, you call it a night. The mice hurry back to their hole and you head straight to bed. Although you can hear your stomach grumbling, you decide to sleep it off, and hope that tomorrow will be a better day to go out and [[collect sedge. ->Day 1 Beginning]]
+
+
+:: Back home {"position":"950,1025","size":"100,100"}
+Fueled by your instinct, you get up. Your heart is racing, adrenaline is coursing through your veins. Your legs, tired from carrying you forward, are renewed with urgerncy to make it home. Each step becomes a battle against the terrorizing cold and the treacherous terrain.
+
+Your hope of returning safely in to the arms of your wife is dropping by the minute. Every passing moment threatens your safety. [[You are slowly being engulfed by the frozen abyss.->Back home 2]]
+
+
+:: Back home 2 {"position":"850,1200","size":"100,100"}
+Quickly, hurry on forward!
+
+(set: $counter to 10)
+
+(live: 1s) [
+	(set: $counter to it-1)
+    (if: $counter is 0) [
+    	(go-to: "Continue 2")
+    ]
+    (replace: ?amount)[$counter]
+]
+
+
+(set: $clicks to 0)
+(link-repeat: "Press forward!") [
+	(set: $clicks to it+1)
+    (if: $clicks is 20)[(go-to: "Back home 3")]
+]
+
+
+:: Back home 3 {"position":"1025,1200","size":"100,100"}
+Finally, with the little energy you have left, you look up onto the horizon of the forest and see your home. You have never been so happy to see the candle light shining through the windows, as you use every muscle you ahve left to push through and make it to the door. With trembling hands, you reach up to the door and knock. 
+
+You can hear your wife rushing to the door. As soon as she opens, you collapse inside.
+
+"AHHH!" She yells as she scrambles to pick you up, assisting you to the [[small couch.->Stay Inside 2]]
+
+
+:: Bad 1 [Day-1] {"position":"2650,925","size":"100,100"}
+You decide to ignore the statues, prioritizing your safety over some inaminate objects. Surely, the gods won't punish you for taking care of yourself?
+
+[[After some decision-making, you make your way back home.->Bad 2]]
+
+
+:: Bad 2 [Day-1] {"position":"2525,1050","size":"100,100"}
+"Welcome back." Your wife greets you as you enter through the front door. "Did something happen in the village today?"
+
+"Nothing particular happened today, just a traveler passing by. I just gave him a new hat. Is something the matter?"
+
+"Not at all. I just suddenly had a sudden sinking feeling in my stomach, as if something bad happened. I'm glad to made it back safely," your wife claims, with a face of concern for your well-being.
+
+[["I see..." ->Start event 3 Beginning]]
+
+
+:: Bad Return 1 [Day-1] {"position":"2675,800","size":"100,100"}
+You decide to ignore the statues, as their presence begins to attack your sanity. You feel a bit more relieved with the statues out of your sight, but you can still sense their gaze on your back.
+
+[[With the wood you gathered in hand, you return to the safety of your home.->Bad Return 2]]
+
+
+:: Bad Return 2 [Day-1] {"position":"2800,800","size":"100,100"}
+"Welcome back, thank you for gathering the wood," your wife says, greeting you on your return. "Are you okay? You have a scared look on your face."
+
+With a slight shaky voice, "I'm doing okay, just felt some sort of pressure from the gods today."
+
+"The gods can sometimes be unkind to some, but I'm sure you're safe from their grasp. Come sit, I'll prepare our meal."
+
+You eat your dinner in calmness, preparing for the next day. -> (next day)
+
+
+:: Continue {"position":"650,1050","size":"100,100"}
+With determination, you press on. Despite the pain shooting through your old knees, you finally locate the patches of sedge, carefully gathering them in your weathered hands. 
+
+Suddenly, a blizzard unleashes its fury and the world you begins to twirl and disorient you. What once looked like trees, suddenly turned into blurry white swirls sweeping across your eyes.
+
+[[You're plummeted into the ground and the sedge you once had, disappeared under a blanket of snow.->Continue 2]]
+
+
+:: Continue 2 {"position":"475,825","size":"100,100"}
+You tought you knew yourself and the path well enough, but the power of mother nature conspired against you today. 
+
+A quiet acceptance washes over you and you decide to lay down in the piles of snow. You gaze up into the forest cradled by the coldness of nature. Fatigue weighs on your eye lids as the tranquility of the forest holds you.
+
+As your body grows numb, the forests whispers, as if lullabies were being sung to you. You finally come to peace with the sleep hanging over you. As you finally close your eyes, you remember your wife. Oh...how you wish you could have stayed.
+
+The snow blanket covers the old man, cradling him in a gentle embrace and there in the winter forest, you found your final rest.
+
+''BAD ENDING''
+[[Restart?->Intro]]
+
+
+:: Day 1 Beginning [Day-1] {"position":"2225,225","size":"100,100"}
+(css: "font-size: 250%")[The next day]
+
+{
+	(live: 5s) [
+    	(go-to: "Day 1 Intro 1")
+        ]
+}
+
+
+:: Day 1 Intro 1 [Day-1] {"position":"2350,225","size":"100,100"}
+You wake up to the next day, your body sore from the events of yesterday. Rising up from the soothing futon laid on the tatami mats, you notice the outside looking more peaceful than the day before.
+
+However, you hear the sound of something scurrying around your room. You soon realize that it's...
+
+The mice! But most importantly, they seem to be carrying around sedge to the middle of the room.
+
+While you were busy sleeping, the mice were out collecting sedge for you as they were thankful for feeding them last night, a token of gratitude. 
+
+Poppa mouse comes to you and says, “Thank you, your food last night gave us energy to go out and collect your sedge. Please, take this gift as a big thank you from not only from me.... But from my [[entire family.”->Day 1 Intro 2]]
+
+
+:: Day 1 Intro 2 [Day-1] {"position":"2500,225","size":"100,100"}
+"Good morning," your wife greets you upon exiting the bedroom. "The day is much pleasant this time around. Seems like the mice had already greeted you good morning!"
+
+"Indeed they have, I am grateful for their work." you respond.
+
+"Do you plan on selling your umbrella hats today? The walk towards the village seems to be smooth," your wife inquires.
+
+What will you do?
+
+[[Go to the village->Village 1]]
+
+[[Stay inside->Inside 1]]
+
+
+:: Exit door {"position":"975,375","size":"100,100"}
+心配しないで
+
+"Don't worry, I'll clear the snow and go find some sedge. We can use it to make hats to sell on New Years celebration day."
+
+"Please be careful, the snow looks awfully dangerous today. You're not the young man you once were," [[your wife responds.->Exit door 2]]
+
+
+:: Exit door 2 {"position":"1050,550","size":"100,100"}
+''どやってドアを開けますか？ How do you open the door?''
+
+[[Gently pry the door open->Pry Door]]
+
+[[Use all your force to open the door.->Force Door]]
+
+
+:: Force Door {"position":"700,575","size":"100,100"}
+You force the door open and BOOM! The piles of snow come tumbling down into your house. The cold breeze takes over your entire room and you find yourself laying down on the piles of snow that have entered your house. Your wife, nowhere to be seen.
+
+Unable to move, you stay laid down on the snow. Try as you might, you cannot gather the strength to get out of the large pile of snow that overcome syou. Fatigue weighs on your eye lids as the tranquility of the forest holds you down.
+
+The snow blanket covers the old man, cradling him again in a gentle embrace and there inside your own home, you found your final rest.
+
+BAD ENDING 1
+[[Restart?->Intro]]
+
+
+:: From Village 1 [Day-1] {"position":"2175,850","size":"100,100"}
+With a few opportunities, you were able to make some money for the mochi, but only enough for a few portions. Satisfied with your work, you decide to head back home.
+
+Upon passing through the trail, you notice the statues once more. This time around, the statues are covered with snow, barely being visible through the blankets of white. 
+
+The sun is setting soon, and you're not sure if you'll be able to make it back in time before dark.
+
+[[Clean the statues.->Good 1]]
+
+[[Ignore them.->Bad 1]]
+
+
+:: Give the money to the poor people of the village {"position":"1150,1800","size":"100,100"}
+You think to yourself, "These people need it even more than me, their families need it. I may need it as well but it is better to help others too".
+
+You give it to a man was asking for money to feed his family. You insist that he should keep all of the money for himself and his family. 
+
+He is very thankful and gives you back a couple of yen bills. You gladly accept the yen bills and make your way to sell you hats downtown to hopefully sell at [[least one]].
+
+<img src="https://static.wixstatic.com/media/4a7749_edd7abd5fa1a4926b9fd961d4ade3ff5~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/JapaneseVillage.png" width="1000" height="500">
+
+
+:: Good 1 [Day-1] {"position":"2375,925","size":"100,100"}
+You decide to clean up the statues from the snowy prison. The statues become clearly visible again.
+
+To help prevent a similar situation from happening again, you decide to place hats on each statues. However, you realize you only have 1 good hat remaining, as the others towards the bottom of the basket were mangled from the storm. You place your last hat on one of the statues.
+
+[[After your hard work, you head back home again, with enough time to spare.->Good 2]]
+
+
+:: Good 2 [Day-1] {"position":"2175,1000","size":"100,100"}
+"Welcome back". Your wife greets you back home after the hike back. 
+
+"You seem to be in a good mood today. Did something happen in the village?"
+
+In a surprised tone, you respond. "I don't feel particularly special. A traveler was passing by, so I offered him a hat. Is...there something on my face?"
+
+"No, no, you just seem more...whole, or complete? Something just seems good about your demeanor."
+
+[["I see..." ->Start event 3 Beginning]]
+
+
+:: Good Return 1 [Day-1] {"position":"2800,675","size":"100,100"}
+Despite the terrifying feeling in your gut, you clear statues from the grasp of the snow. Their gaze still emits the same aura, but you feel less guilty about leaving them be.
+
+You decide to place your hat atop one of the statues, in hopes of preventing at least one statue from being smothered from the heavy snow.
+
+[[With your wood in hand, you finally return home->Good Return 2]]
+
+
+:: Good Return 2 [Day-1] {"position":"2925,675","size":"100,100"}
+As you enter through the front, your wife greets you on your return. "Welcome back, thank you for gathering the wood". With a concerned look, she notices your frightened face, "Are you okay? You look like you just witnessed a ghost passing by..."
+
+"I feel like I've been tested today, as if the gods forced me to make a decision..."
+
+"Well, I'm sure you made the right decision today, and the gods may even reward you! Come sit, I'll prepare dinner."
+
+You finally rest after escaping the heavy pressure from the statues. Having enjoyed your wife's dinner and lying down onto the futon, you find yourself relieved from your stress as you slowly succumb to sleep.
+
+
+:: Inside 1 [Day-1] {"position":"2550,500","size":"100,100"}
+"I think I'll remain here today. A lot happened yesterday, and I would like to get rest up my body a bit."
+
+"I understand. Would you mind helping me clean up the house, then?"
+
+[["Of course, I'll be glad to help. Let me make some umbrella hats first."->Inside 2]]
+
+
+:: Inside 2 [Day-1] {"position":"2725,500","size":"100,100"}
+In a few hours time, the house look much more pleasant than before. With the remaining supplies you had, you restored the house back to its former glory. With the sedge collected from the mice, you were able to focus on making umbrella hats worthy of praise from the best hat-makers in the country.
+
+<img src="https://static.wixstatic.com/media/4a7749_beb620b5931047a283cdc6852a1ac973~mv2.png/v1/fill/w_164,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SedgeHats.png">
+
+Your wife returns from her voyage towards the village north, with only a new bag of rice and small portions of fish.
+
+"The sun seems to be setting soon, I should start preparing some dinner. Do you mind grabbing some wood for the firepit?", your wife requests.
+
+[["Sure, I'll head out right now."->Outside 1]]
+
+
+:: Intro {"position":"450,50","size":"100,100"}
+"We're down to our last cup of rice," said your wife. She is standing over the almost empty bag of rice that was once full.
+
+Even from a distance, you can hear her stomach grumbling through the room. She looks more tired than yesterday, fatigue is building deeper in the lines of her [[face.->Intro 2]]
+
+
+:: Intro 2 {"position":"900,150","size":"100,100"}
+You look around the vacant house, your gaze sweeping across the desolate room. You notice the spiders weaving their webs in the forgotten corners of the house. Suddenly, a large gust of wind rattles the house, [[the chilly wind sends shivers down your spine.->Intro 3]].
+
+<img src="https://static.wixstatic.com/media/4a7749_0cf7a0d8249a41a488db926a25ede36a~mv2.png/v1/fill/w_180,h_180,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/InsideOfCabin.png">
+
+
+:: Intro 3 {"position":"1075,225","size":"100,100"}
+With a weakend voice, your wife says, "This wekeend is New Years and...we don't have any rice or...any sedge to make our hats. What are we going to do?"
+
+You look out the window to see the heavy snow piled up against the door frame, preventing you from an exit.
+
+''何をするか？(What do you do?)''
+
+[[Use all your force to make an exit out the door in order to go collect sedge to make your hats.->Exit door]]
+
+[[Wait inside and cook the remaining rice you have left.->Stay Inside]]
+
+
+:: Keep it to myself {"position":"500,1800","size":"100,100"}
+Are you sure?
+
+[[Positive]]
+
+Not really, I'll just [[Give the money to the poor people of the village]]
+
+
+:: Keep the money for yourself {"position":"250,1925","size":"100,100"}
+"I'll just keep it for myself, in this world it is everyone for themselves we gotta find a way to survive and looks like I got lucky". You put it in your bag and continue walking.
+
+You arrive to downtown. There is a lot of people at the moment, some are buying groceries, others are doing tricks to earn money and kids are crying because they're parents would not buy them a toyy that they saw at a stand. 
+
+Lets see if you are able to sell anything.
+
+
+You set up your small stand and you display your [[hats]].
+
+<img src="https://static.wixstatic.com/media/4a7749_58d0b6dd0932411fb6c94fb16f9411af~mv2.png/v1/fill/w_161,h_163,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Japanese_Market.png" width="1000" height="500">
+
+
+
+:: Kick mice {"position":"1725,450","size":"100,100"}
+You look at your wife, and you can feel your heart sink.... you know what you must do. BAAMMM. You immediately send the family of mice flying out the door. There is no way that you were allowing these mice to take your food. 
+
+[[Restart->Intro]]
+
+
+:: Mice Intro {"position":"1850,225","size":"100,100"}
+You look at your wife's eyes, questioning if it was her who said that statement. It was neither of you. With eyes wide open, you both lookd down at the ground and see a tiny mouse. 
+
+"Could it be?", you say to yourself. [[Did...did this baby mouse just...talk?!->Mice Intro 2]]
+
+<img src="https://static.wixstatic.com/media/4a7749_03d5411ecd694b37a68735f60bb13539~mv2.png/v1/fill/w_156,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Rats.png">
+
+
+:: Mice Intro 2 {"position":"1875,400","size":"100,100"}
+"Pleas sir, I do not ask for much but a few grains of rice to feed my family. We have not eaten for days, and the weather is too dangerous to venture out to find food. We barely have any scraps to eat," says the papa mouse.
+
+''What do you do?''
+
+[[Spare some grains of rice to them.->Rice sparing]]
+
+[[They're talking mice! Kick them!->Kick mice]]
+
+
+:: No {"position":"675,2475","size":"100,100"}
+You decide it is rather a bad idea to do so. You never know what these people's intentions will be. 
+
+You go back outside and walk through the street with the money you picked up from one of the rich people.
+
+
+
+[[Suddenly...]]
+
+
+:: No, that's shady {"position":"300,2800","size":"100,100"}
+"Thanks for the offer but I think I am good for now. I would've love to keep playing but I feel like I am becoming adiccted so I should stop now".
+
+"Alright then, no worries".
+
+You leave the gambling house and head on home with your wife. "I didnt get any sales but hopefully the next day will be better."
+
+
+-end of chain-
+
+
+:: Outside 1 [Day-1] {"position":"2525,725","size":"100,100"}
+Grabbing one of your hand-crafted straw umbrella hats, you set out to gather pieces of wood for the firepit. You wander quite a bit, collecting as many pieces as you can for future usage.
+
+As you walk along the trail, you notice the snow-covered Jizou statues, the guardians of children and travelers. Although you passed those statues numerous times when you head to the village, this time seems...different. The eyes of the statues almost intimidate you, taunting you in a sense to come towards them.
+
+[[Approach the statues.->Statues 1]]
+
+[[Return back home.->Bad Return 1]]
+
+
+:: Pick up the wallet {"position":"700,1650","size":"100,100"}
+You proceed to inspect the wallet which is something you are not supposed to do but you seem to be quite curious, 
+
+"Wow! There is a good amount of money here, maybe I can use this money for buying food". 
+
+You look to your side and see that some people of the poor village are really struggling from getting resources and food for the families. Maybe the money can help them in some way. But you also need to be food for you and your wife.
+
+What should you do?
+
+[[Keep it to myself]]
+
+
+[[Give the money to the poor people of the village]]
+
+
+:: Positive {"position":"600,1950","size":"100,100"}
+What if something bad happens?
+
+You really don't care, you'll just [[Keep the money for yourself]] 
+
+Yeah, you're right, I should probably not do that and rather [[Give the money to the poor people of the village]]
+
+
+:: Pry Door {"position":"950,725","size":"100,100"}
+After what seemed like forever, you finally were able to pry the door open, slowly but safely. Bundled in layers of blankets, you stepped out into the forest. The forest stood tall and somber, its tress decorated with layers of frost.
+
+As you venture deeper into the heart of the forest, the weather takes a sharp turn. The wind becomes more icy, whipping you in the face with its cold breeze, tugging your clothing. [[Your fingers begin to feel numb, your breath begins to turn into wisps of smoke.->Pry Door 2]]
+
+<img src="https://static.wixstatic.com/media/4a7749_788b2c8c6a36460b99c89a0daf1e000a~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/OldManSnow.png">
+
+
+:: Pry Door 2 {"position":"850,875","size":"100,100"}
+''Should you go back?''
+
+[[Go home.->Back home]]
+
+[[Keep going.->Continue]]
+
+
+:: Rice sparing {"position":"1925,550","size":"100,100"}
+You look up at your wife, and you can feel your heart sink. They too are struggling to make ends meet and realize, that you aren’t that different from the family of mice after all. 
+
+You grab what little rice you have and place it on the ground. Immediately, the momma mouse cries tears of joy.
+
+“Thank you, thank you, THANK YOU!” She cries. Together, that night, you have dinner with the mice, sharing stories, laughing, and finally feeling happiness at the thought of having company once again in your [[small home.-> Help Them 2]]
+
+
+:: Start event 3 {"position":"750,1500","size":"100,100"}
+You decide to go sell hats after gathering the resources to do so and head to downtown to find potential buyers. Its early in the morning and the way to downtown is pretty far. It would make me feel lazy if you ask me. 
+
+While walking, you think to yourself,
+
+"I just got to make as much money possible selling these hats. The is just not much food left at home".
+
+You think about your wife and hope to see her happy and be able to provide food so that both of you and live a better life. 
+
+You make your way along the path towards [[downtown]]
+
+
+:: Start event 3 Beginning {"position":"925,1350","size":"100,100"}
+(css: "font-size: 250%")[The next day]
+
+{
+	(live: 5s) [
+    	(go-to: "Start event 3")
+     ]
+}
+
+
+:: Statues 1 [Day-1] {"position":"2675,675","size":"100,100"}
+You approach the statues, with their large, frightening aura. You've never felt something like this before.
+
+You are afraid to even interact with them, but they pressure you to stay. You decide to...
+
+[[Leave the statues be.->Bad Return 1]]
+
+[[Clean the statues.->Good Return 1]]
+
+
+:: Stay Inside {"position":"1225,325","size":"100,100"}
+"We should wait, the snow looks quite strong today," you say to [[your wife->Stay Inside 2]]
+
+
+:: Stay Inside 2 {"position":"1450,400","size":"100,100"}
+Your wife begins the fire, places a pot of rice and water over it allowing for the rice to boil. 
+
+The warmth quickly wraps itself around you, filling your nose with the delicious scent of cooking rice.
+
+While you sit at the table, your wife exclaims, "The rice is ready!". She places down two small bowls of rice in front of you.
+
+As you prepare a yummy spoonful of rice for yourself, you suddenly hear a small, faint voice coming from the floor. [["Oh, I'm //so, so// hungry."->Mice Intro]]
+
+<img src="https://static.wixstatic.com/media/4a7749_24b8bd2a55b24eb88f84bc930b829f8f~mv2.png/v1/fill/w_166,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BoilingRice.png">
+
+
+:: Stranger 1 [Day-1] {"position":"2175,700","size":"100,100"}
+You approach the stranger, offering a newly-made hat for him.
+
+"Ah, thank you, kind sir." He seems to appreciate your gesture. "Do you happen to live in this village?"
+
+"I do not, I come here often from the hills up there," as you point towards the west. [["Where are you from?", you ask.->Stranger 2]]
+
+
+:: Stranger 2 [Day-1] {"position":"2400,700","size":"100,100"}
+"I'm actually a traveler, looking to explore the vast lands of Japan. It's been quite a journey."
+
+"Well, I hope you enjoy your stay here," you respond.
+
+"I do have one question," the traveler says. "Do you happen to know of any...gods...er...deities or some similar beings? I hear the gods here can be a bit...judgemental, in a sense."
+
+With a perplexed look on your face, "I personally don't know any god, but I am aware of the statues of the gods towards the north. I actually pass by it everytime I enter the village."
+
+"I see...well, thank you for your kindness. I have rested long enough, I think I should get going soon". The traveler paces off, disappearing into the distance in only a few seconds.
+
+"Ah...", you realize something very crucial. [["He forgot to pay me..."->From Village 1]]
+
+
+:: Suddenly... {"position":"825,2500","size":"100,100"}
+YOU GET MUGGED BY SOMEONE!
+
+You just lost teh wallet and the money that it had.
+
+Tough luck. 
+
+
+-ending of this decision-
+
+<img src="https://static.wixstatic.com/media/4a7749_59459aebab094397925f607981389c4a~mv2.png/v1/fill/w_173,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Robbed.png" width="1000" height="500">
+
+
+
+:: Village 1 [Day-1] {"position":"2325,400","size":"100,100"}
+"I'll try and head to the village today. We'll need some money to buy mochi for New Year's soon. I'll use the sedge "
+
+"I had completely forgotten about about New Year's, so much has happened this year. Good luck in the village, I'll be trying to clean up the house and purchase some goods from the village north."
+
+You ready your basket, filled with the straw umbrella hats you hand-crafted with the sedge from the mice. You give your wife a kiss on the forehead, and you bow to the mice before you set out.
+
+<img src="https://static.wixstatic.com/media/4a7749_beb620b5931047a283cdc6852a1ac973~mv2.png/v1/fill/w_164,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SedgeHats.png">
+
+With the inspiration from the mice, you are quite eager to sell your hats. [[After saying your goodbye's and getting ready, you head down to the village->Village 2]]
+
+
+:: Village 2 [Day-1] {"position":"2175,525","size":"100,100"}
+The sun beams rays of light that make the white sheets of snow shine with gold. The trees of the forest give frequent pockets of shade between each golden beam.
+
+As you continue down towards the village, you notice the Jizo statues, guardians of children and travelers. Although you have passed this trail many times and have seen these statues a countless number of times, this time feels...strange, somewhat ominous.
+
+[[Although you are quite curious about the statues, you continue to the village.->Village 3]]
+
+
+:: Village 3 [Day-1] {"position":"2375,525","size":"100,100"}
+After a short while through the fresh snow, you finally arrive at the entrance of the village. The houses are covered in blankets of snow, only specks of the brown lumber and light from the campfires arise from the deep white. 
+
+Amongst the houses are adults shoveling the snow from the roads, others gathering wood for their firepits, as well as children playing around with the snow. However, one sight catches your eye: a person sitting on a bench. He wear a beaten coat, but most importantly, dons an umbrella hat with a significant portion missing.
+
+[[Approach the stranger->Stranger 1]]
+
+
+:: Yakuza {"position":"650,2825","size":"100,100"}
+You become concerned, worried, anxious, every single feeling of being uneasy is running thourgh your body.
+
+What did they do to her? Where will they be? How are you going
+
+
+:: Yeah, sure why not {"position":"475,2650","size":"100,100"}
+"You know what? I am looking forward to playing a bit more".
+
+The yakuza lends you the money so that you can keep playing. You continue to play for a few more hours and lose a bit of money but you did win several times. 
+
+You proceed to leave the place, "I will pay you when I can sir".
+
+"No problem, I will need it soon though".
+
+
+You walk [[home]].
+
+
+:: Yes {"position":"300,2450","size":"100,100"}
+You ask one of the men if your can be able to play.
+
+"Who the hell are you?" says one of the Yakuza.
+
+"OH erm, my name... is.."
+
+"I dont care what you name is! You are not supposed to be here-"
+
+"Relax man", says another yakuza. This man seemed less agressive than the other man.
+
+"Do you have money to play?"
+
+"Why... yes- I have money from the rich. One of them dropped their wallet".
+
+"Alright then, let him [[play]]".
+
+<img src="https://static.wixstatic.com/media/4a7749_9d4c8e86abaa4806bbeaa15f8d61b5bc~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gang.png" width="500" height="500">
+
+
+:: around! {"position":"1200,2200","size":"100,100"}
+After putting away the stand you count the money
+
+There is a good amount of money to last for months!
+
+There is also extra money for perhaps saving or emergencies!
+
+Looks like it was a good day for you, would this good day have something to do with the good deed you did before? Maybe.
+
+Regardless, you now have the money to buy food for you and your [[wife]].
+
+
+:: check it out {"position":"450,2325","size":"100,100"}
+<img src="https://static.wixstatic.com/media/4a7749_d06e4031588b4d8fb7d2c059b13ca69b~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GamblingHousePt2.png" width="1000" height="500">
+
+You enter the gambling house and you notice that there is a group of men gambling. they dont seem to be like the rich. These guys have tattoos and have a very menacing appearance. 
+
+The game that they are playing looks like fun, maybe you should try asking them if you can play.
+
+[[Yes]]
+
+[[No]]
+
+
+:: dog {"position":"300,2200","size":"100,100"}
+The dog is really fast. Arriving at a street, teh dog runs into a crowd of people and stops. 
+
+You catch up to the dog and take the hat from him and scare him away. "That damn dog! It drooled all over the hat, it took me hours to get the materials to make these!"
+
+
+You notice that the crowd the dog ran into before is surrounding a particular building.
+
+You decied to [[investigate]].
+
+
+:: downtown {"position":"1025,1475","size":"100,100"}
+As you make your way downtown, you pass through a small village of people with low income and scarse resources. You see some kids that are playing with ripped clothing and with dirt on their faces. You also see adult people asking for money to provide for their families and to buy food. 
+
+<img src="https://static.wixstatic.com/media/4a7749_edd7abd5fa1a4926b9fd961d4ade3ff5~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/JapaneseVillage.png" width="1000" height="500">
+
+You think to yourself while looking at some of these people,"Looks like I might not be the only one with financial problems, it is sad to see them like this".
+
+Laughter is heard at a distance. A group of rich villagers passing by walk beside you, the walk with their chest up and laughing at each others joke. The confidence in their faces shows how they do not have any finanical problems they have to worry about. 
+
+It must be nice to [[feel that way]].
+
+
+:: feel that way {"position":"1225,1600","size":"100,100"}
+They look around and they dont seem to show any pity towards the poor people of the village. The villagers would ask them for moeny but they woudl just be ignored. 
+
+As they pass by, you see that from one of the men's back pockets a wallet dropped and landed next to your feet. 
+
+The man did not notice as he was too busy laughing with the other rich men. 
+
+You can see that the wallet is pretty full and it has a good amount of yen bills and some coins as well. You then [[Pick up the wallet]].
+
+<img src="https://static.wixstatic.com/media/4a7749_633b4aa0fd654912b94c0d34a9a584fe~mv2.png/v1/fill/w_124,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Wallet.png" width="500" height="500">
+
+
+:: hats {"position":"300,2075","size":"100,100"}
+"HATS HERE, GET YOUR HATS HERE!" you shout in order to grab people's attention in hopes that they buy a hat. Some people would get scared because the scream came out of nowhere. 
+
+You stil in your stand waiting to see who would be your first customer. The majority of the people just walk buy and just look at the stand.
+
+
+Occasionally, there would be some people approaching the stand and would look at the hats. But almost every single time, they would just pick them up, inspect them, place them back down, and leave. 
+
+Looks like it will be another [[tough day]].
+
+
+:: home {"position":"650,2675","size":"100,100"}
+Several weeks have passed by and you still have not payed the Yakuza that you even forget that you owe them in the first place. You wake up and make your journey to sell hats and get more money.
+
+
+After a few hours of work you get to pack all of your stuff and pass by the gambling house you attended a few weeks ago. 
+
+The lights are off.
+
+You continue to make your way to your house.
+
+When you arrive to your house you notice something [[terrible]].
+
+
+:: investigate {"position":"600,2250","size":"100,100"}
+You decide to see what is the commontion and it seems that the place that is filled with people is actually a gambling house. The group of people were watching the rich gamble and win a lot of money. 
+
+<img src="https://static.wixstatic.com/media/4a7749_30b1020bc0fa4bb1b157343aa081643c~mv2.png/v1/fill/w_155,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GamblingHouse.png" width="1000" height="500">
+
+"What if I did that as well?" you think to yourself. "But they would not let me into that club, I would have to go somewhere else".
+
+You then see man walk by you with tattoos on his arms entering what seemed to be a smaller gambling house which was a bit more private.
+
+You decide to [[check it out]].
+
+
+:: least one {"position":"1350,2025","size":"100,100"}
+You get to downtown and set up your stand to sell your hats.
+
+Of course, business is slow but then a person sees your hats and is intrigued with the design. 
+
+<img src="https://static.wixstatic.com/media/4a7749_fe6cba1beca6413ca83d0f61756aa398~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RichLady.png" width="500" height="500">
+
+"Excuse me? How much are these?"
+
+"They cost 150 yen."
+
+"Did you make these yourself?"
+
+"Yes [[ma'am]]"
+
+
+:: ma'am {"position":"1000,2050","size":"100,100"}
+The women is amazed by your skills for making hats.
+
+She then takes out a pouch that included a few yen bills, "I would like to buy your entire stock of hats!".
+
+
+You look at her confused, "Wait, are your serious?".
+
+"Yes, yes I am! These hats are very well made and I would like to give them to some of the people of the poor village. I would potentially also keep one for myself, teehee."
+
+You accept the [[offer]].
+
+
+:: next day {"position":"1600,625","size":"100,100"}
+You wake up to the sound of mice scurrying around your room, their tiny paws running around. Suddenly, you realize whats at the middle of the room....
+
+Sedge!
+
+While you were busy sleeping, the mice were out collecting sedge for you as they were thankful for feeding them last night, a token of gratitude. 
+
+Poppa mouse comes to you and says, “Thank you, your food last night gave us energy to go out and collect your sedge. Please, take this gift as a big thank you from not only from me.... But from my [[entire family.”->nextday2]]
+
+
+:: nextday2 {"position":"1775,725","size":"100,100"}
+Suddenly, it strikes you. The village is celebrating today and there will be a ton of people heading down to party! 
+
+Inspired by the mice offering, you realize that its your chance to shine. With this shock of excitement running through your body, you gather the sedge and get straight to work. Using your nimble fingers, you carefully weave and fashioned the sedge into beautiful hats, each one uniquely crafted with love and attention to detail. 
+
+The mice sit in awe as the hats begin to take shape and before you know it, the morning sun rose higher into the sky. After crafting a exquisite collection of sedge hats, you feel eager to go out and sell your [[hats to the village. ->village day]]
+
+<img src="https://static.wixstatic.com/media/4a7749_beb620b5931047a283cdc6852a1ac973~mv2.png/v1/fill/w_164,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SedgeHats.png">
+
+
+:: offer {"position":"1000,2200","size":"100,100"}
+She pays you and buys your entire stock of hats. 
+
+
+"If possible, I would like to buy more of your hats in the future!".
+
+"Why yes- yes I would definitley make some next time!"
+
+"Okay sounds good! Thank you so much!"
+
+"See you [[around!]]"
+
+
+:: play {"position":"300,2625","size":"100,100"}
+You start gambling with the yakuza. The game is so intense, you decide to bet again and again and again and again and... well, you get the idea. 
+
+
+After hours of playing you have lost all of the money from the wallet you kept from the rich. Even though you are out of money you kind of what to play again and hopefully win. 
+
+The yakuza that invited you to play offers you a choice to keep playing.
+
+"I see that you are interested in playing again, I can perhaps let you borrow some money to keep playing".
+
+<img src="https://static.wixstatic.com/media/4a7749_37100811dabf43c9b5b4c5746c9e0bb8~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/YenBills.png" width="500" height="500">
+
+What do you respond?
+
+[[No, that's shady]]
+
+[[Yeah, sure why not]]
+
+
+:: terrible {"position":"475,2800","size":"100,100"}
+<img src="https://static.wixstatic.com/media/4a7749_bb3d8c890ebb4670b3777a8cb4f88c01~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/DestroyedHome.png" width="1000" height="500">
+
+Someone has destroyed your crops and your house has been broken into. You gasp and remember that your wife was back home so you rush to see if she is okay.
+
+You search every room and around the house. She is nowhere to be seen. What you did find is a note that said 
+
+
+-insert japanese text here-
+
+It was the [[Yakuza]].
+
+
+:: tough day {"position":"600,2125","size":"100,100"}
+(live: 5s)[A few hours have passed by and there has not been any big sales and only one person bought a hat. ]
+
+(live: 6s)[You decide to pack up to head back home with the bills that you found near the poor village. ]
+
+(live: 8s)[When you reach for the last hat, a dog passes by and takes the hat with them.]
+
+(live: 9s)["That damn dog! You will not steal my merchandise to destroy it or make it a chew toy! My hats are a work of art!" 
+
+You decide to chase after the [[dog]].]
+
+(live: 10s)[<img src="https://static.wixstatic.com/media/4a7749_216a5483cb65494992cb932d5d45f5d7~mv2.png/v1/fill/w_136,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/starryai-0-1000651485-1-0-photo.png" width="500" height="500">]
+
+
+:: village day {"position":"1625,800","size":"100,100"}
+You give your wife a kiss goodbye with a big hug, and you look down to the mice, giving them one big thank you. 
+
+You back your bag full of sedge hats and place them on your back. You walk out the door and immediately take a big whiff of the fresh mountain air. You descend the mountain all the way down to the village, step by step taking in the beauty of mother nature. 
+
+(set: $mice to true)
+
+After what seemed like hours, you finally reach the village where tons of [[people are gathering. ->Day 1 Beginning]]
+
+
+:: wife {"position":"1000,2375","size":"100,100"}
+You go to a grocery shop and buy as much food possible and walk back home.
+
+You arrive back at home. 
+
+"Honey, I am home and I brought food!"
+
+Good ending 
+
+-next event here or restart-
