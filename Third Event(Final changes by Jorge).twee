@@ -1,0 +1,372 @@
+:: StoryTitle
+Third event
+
+
+:: StoryData
+{
+  "ifid": "4F27FD79-D38B-4C6A-A493-2D4D951BC9AE",
+  "format": "Harlowe",
+  "format-version": "3.3.5",
+  "start": "Start event 3",
+  "zoom": 1
+}
+
+
+:: Give the money to the poor people of the village {"position":"1625,500","size":"100,100"}
+You think to yourself, "These people need it even more than me, their families need it. I may need it as well but it is better to help others too".
+
+You give it to a man was asking for money to feed his family. You insist that he should keep all of the money for himself and his family. 
+
+He is very thankful and gives you back a couple of yen bills. You gladly accept the yen bills and make your way to sell you hats downtown to hopefully sell at [[least one]].
+
+
+<img src="https://static.wixstatic.com/media/4a7749_edd7abd5fa1a4926b9fd961d4ade3ff5~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/JapaneseVillage.png" width="1000" height="500">
+
+
+:: Keep it to myself {"position":"1050,450","size":"100,100"}
+Are you sure?
+
+-[[Positive]]
+
+-Not really, I'll just [[Give the money to the poor people of the village]]
+
+
+:: Keep the money for yourself {"position":"725,725","size":"100,100"}
+"I'll just keep it for myself, in this world it is everyone for themselves we gotta find a way to survive and it looks like I got lucky". 
+
+You put the wallet in your bag and continue walking.
+
+You arrive to downtown. There is a lot of people at the moment, some are buying groceries, others are doing tricks to earn money and kids are crying because they're parents would not buy them a toy that they saw at a stand. 
+
+Lets see if you are able to sell anything.
+
+
+You set up your small stand and you display your [[hats]].
+
+<img src="https://static.wixstatic.com/media/4a7749_58d0b6dd0932411fb6c94fb16f9411af~mv2.png/v1/fill/w_161,h_163,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Japanese_Market.png" width="1000" height="500">
+
+
+:: No {"position":"925,1400","size":"100,100"}
+You decide it is rather a bad idea to do so. You never know what these people's intentions will be. 
+
+You go back outside and walk through the street with the wallei in hand.
+
+
+[[Suddenly...]]
+
+
+:: No, that's shady {"position":"250,1750","size":"100,100"}
+"Thanks for the offer but I think I am good for now. I would've love to keep playing but I feel like I am becoming addicted so I should stop now".
+
+"Alright then, no worries".
+
+You leave the gambling house and head on home with your wife. 
+
+"I didnt get any sales but hopefully the next day will be better."
+
+
+-end of chain-
+
+
+:: Pick up the wallet {"position":"1325,250","size":"100,100"}
+You proceed to inspect the wallet which is something you are not supposed to do but you seem to be quite curious, 
+
+"Wow! There is a good amount of money here, maybe I can use this money for buying food". 
+
+You look to your side and see that some people of the poor village are really struggling from getting resources and food for the families. Maybe the money can help them in some way. But the thing is that you also need to buy food for you and your wife.
+
+What should you do?
+
+-[[Keep it to myself]]
+
+
+-[[Give the money to the poor people of the village]]
+
+
+:: Positive {"position":"925,575","size":"100,100"}
+What if something bad happens?
+
+-You really don't care, you'll just [[Keep the money for yourself]] 
+
+-"Yeah, you're right, I should probably not do that and rather [[Give the money to the poor people of the village]]"
+
+
+:: Start event 3 {"position":"1200,0","size":"100,100"}
+You decide to go sell hats after gathering the resources to do so and head to downtown to find potential buyers. Its early in the morning and the way to downtown is pretty far. It would make me feel lazy to walk all the way downtown if you ask me. 
+
+While walking, you think to yourself,
+
+"I just got to make as much money possible selling these hats. There is just not much food left at home".
+
+You think about your wife and hope to see her happy and be able to provide food so that both of you and live a better life. 
+
+You make your way along the path towards [[downtown]]
+
+
+:: Suddenly... {"position":"1100,1600","size":"100,100"}
+l(live: 3s)[YOU GET MUGGED BY SOMEONE!
+
+
+<img src="https://static.wixstatic.com/media/4a7749_59459aebab094397925f607981389c4a~mv2.png/v1/fill/w_173,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Robbed.png" width="1000" height="500">
+
+You just lost the wallet and all of the money that it had.
+
+Tough luck. ]
+
+
+-end of chain-
+
+
+:: Yakuza {"position":"1100,2200","size":"100,100"}
+You become concerned, worried, anxious, every single feeling of being uneasy is running thourgh your body.
+
+What did they do to her? Where will they be? How are you going to find her?
+
+-end of chain or entry for new event-
+
+
+
+
+:: Yeah, sure why not {"position":"700,1800","size":"100,100"}
+"You know what? I am looking forward to playing a bit more".
+
+The yakuza lends you the money so that you can keep playing. You continue to play for a few more hours and lose a bit of money but you did win several times. 
+
+You proceed to leave the place, "I will pay you when I can sir".
+
+"No problem, I will need the payment soon though".
+
+
+You exit the place and walk [[home]].
+
+
+:: Yes {"position":"500,1400","size":"100,100"}
+You ask one of the men if your can be able to play.
+
+"Who the hell are you?" says one of the Yakuza.
+
+"OH erm, my name... is.."
+
+"I dont care what you name is! You are not supposed to be here-"
+
+"Relax man", says another yakuza. This man seemed less agressive than the other man.
+
+<img src="https://static.wixstatic.com/media/4a7749_9d4c8e86abaa4806bbeaa15f8d61b5bc~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Gang.png" width="500" height="500">
+
+"Do you have money to play?"
+
+"Why... yes- I have money from the rich. One of them dropped their wallet".
+
+"You? Stealing money from the rich? You got some nerve old man. Alright then, let him [[play]]".
+
+
+:: around! {"position":"1700,1300","size":"100,100"}
+After putting away the stand you count the money
+
+There is a good amount of money to last for months!
+
+There is also extra money for perhaps saving or emergencies!
+
+Looks like it was a good day for you, would this good day have something to do with the good deed you did before? Maybe.
+
+Regardless, you now have the money to buy food for you and your [[wife]].
+
+
+:: check it out {"position":"700,1300","size":"100,100"}
+<img src="https://static.wixstatic.com/media/4a7749_d06e4031588b4d8fb7d2c059b13ca69b~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GamblingHousePt2.png" width="1000" height="500">
+
+You enter the gambling house and you notice that there is a group of men gambling. They dont seem to be like the rich but they sure knew how to gamble. These guys have tattoos and have a very menacing appearance. 
+
+The game that they are playing looks like fun, maybe you should try asking them if you can play.
+
+[[Yes]]
+
+[[No]]
+
+
+
+
+
+:: dog {"position":"800,1100","size":"100,100"}
+The dog is really fast. Arriving at an unknown street, the dog runs into a crowd of people and stops. 
+
+You catch up to the dog and take the hat from him and scare him away. 
+
+"That damn dog! It drooled all over the hat, it took me hours to get the materials to make these!"
+
+
+(live: 3s)[You notice that the crowd the dog ran into before is surrounding a particular building.]
+
+(live: 4s)[You decied to [[investigate]].]
+
+
+:: downtown {"position":"1425,25","size":"100,100"}
+As you make your way downtown, you pass through a small village of people with low income and scarse resources. You see some kids that are playing wearing ripped clothing and dirt smeared on their faces. You also see adults asking for money to provide for their families and to buy food. 
+
+<img src="https://static.wixstatic.com/media/4a7749_edd7abd5fa1a4926b9fd961d4ade3ff5~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/JapaneseVillage.png" width="1000" height="500">
+
+You think to yourself while looking at some of these people,
+
+"Looks like I might not be the only one with financial problems, it is sad to see them like this".
+
+(live: 5s)[Laughter is heard at a distance. A group of rich villagers passing by walk beside you, the walk with their chest up and laughing at each others joke. The confidence in their faces shows how money is not an issue to them and that they don't have to worry about any financial issues. ]
+
+(live: 6s)[It must be nice to [[feel that way]].]
+
+
+
+
+:: feel that way {"position":"1675,125","size":"100,100"}
+They look around and they dont seem to show any pity towards the poor people of the village. The villagers would ask the rich men for money but all they would do is just ignore them. 
+
+As they pass by, you see that from one of the men's back pockets a wallet dropped and landed next to your feet. 
+
+The man did not notice as he was too busy laughing with the other rich men. 
+
+You can see that the wallet is pretty full and it has a good amount of yen bills and some coins as well. You then [[Pick up the wallet]].
+
+<img src="https://static.wixstatic.com/media/4a7749_633b4aa0fd654912b94c0d34a9a584fe~mv2.png/v1/fill/w_124,h_124,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Wallet.png" width="500" height="500">
+
+
+:: hats {"position":"600,900","size":"100,100"}
+"HATS HERE, GET YOUR HATS HERE!", you shout in order to grab people's attention in hopes that they buy a hat. Some people would get scared of your scream as it would catch them off guard and others would giggle. 
+
+You're sitting in your stand waiting to see who would be your first customer. The majority of the people just walk buy and look at the stand.
+
+
+Occasionally, there would be some people approaching the stand and would look at the hats. But almost every single time, they would just pick them up, inspect them, place them back down, and leave. 
+
+Looks like it will be another [[tough day]].
+
+
+:: home {"position":"900,1900","size":"100,100"}
+Several weeks have passed by and you still have not payed the Yakuza. It gets to a point where you even forget that you owe them in the first place. You wake up and make your journey to sell hats and get more money.
+
+
+(live: 3s)[After a few hours of work you get to pack all of your stuff and pass by the gambling house you attended a few weeks ago.]
+
+(live: 5s)[The lights are off.]
+
+(live: 7s)[You continue to make your way to your house.
+
+When you arrive to your house you notice something [[terrible]].]
+
+
+:: investigate {"position":"950,1150","size":"100,100"}
+You decide to see what is the commontion about and it seems that the place that is filled with people is actually a gambling house. They were watching the rich gamble and win a lot of money. 
+
+<img src="https://static.wixstatic.com/media/4a7749_30b1020bc0fa4bb1b157343aa081643c~mv2.png/v1/fill/w_155,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GamblingHouse.png" width="1000" height="500">
+
+You think to yourself, "What if I did that as well? I would also like to learn how to gamble". You try to enter but a guard stops you from entering and says that you need to be either rich or be a well known figure in order to play.  
+
+After walking away from the crowd, a person with a hood passes by.
+
+You then see man walk by you with tattoos on his arms entering what seemed to be a smaller gambling house which was a bit more private.
+
+You decide to go [[check it out]].
+
+
+
+
+:: least one {"position":"1825,725","size":"100,100"}
+You get to downtown and set up your stand to sell your hats. There seems to be less people than normal. Hopefully, you can sell at least one hat.
+
+Of course, business is slow but then a woman sees your hats and is intrigued with the design. The woman looks like she comes from a rich background due to her clothes and her way of speaking.
+
+
+<img src="https://static.wixstatic.com/media/4a7749_fe6cba1beca6413ca83d0f61756aa398~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RichLady.png" width="500" height="500">
+
+"Pardon me, sir? How much are you selling these hats for?"
+
+"They cost 1500 yen ma'am"
+
+"Did you make these yourself?"
+
+"Yes [[ma'am]]"
+
+
+:: ma'am {"position":"1500,850","size":"100,100"}
+The women is amazed by your skills for making hats.
+
+She then takes out a pouch that included a few yen bills, "I would like to buy your entire stock of hats!".
+
+
+You look at her confused, "Wait, are your serious?".
+
+"Yes, yes I am! These hats are very well made and I would like to give them to some of the people of the poor village. I would potentially also keep one for myself, teehee."
+
+You accept the [[offer]].
+
+
+:: offer {"position":"1700,1000","size":"100,100"}
+She pays you and buys your entire stock of hats. 
+
+
+"If possible, I would like to buy more of your hats in the future!".
+
+"Why yes- yes I would definitley make some next time!"
+
+"Okay sounds good! Thank you so much!"
+
+"See you [[around!]]"
+
+
+:: play {"position":"500,1600","size":"100,100"}
+You start gambling with the yakuza. The game is so intense, you decide to bet again and again and again and again and... well, you get the idea. 
+
+
+After hours of playing you have lost all of the money from the wallet you kept from the rich. Even though you are out of money you kind of want to play again and hopefully win this time. 
+
+The yakuza that invited you to play offers you a choice to keep playing.
+
+"I see that you are interested in playing again, I can perhaps let you borrow some money to keep playing".
+
+<img src="https://static.wixstatic.com/media/4a7749_37100811dabf43c9b5b4c5746c9e0bb8~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/YenBills.png" width="500" height="500">
+
+What do you respond?
+
+[[No, that's shady]]
+
+[[Yeah, sure why not]]
+
+
+:: terrible {"position":"800,2100","size":"100,100"}
+
+<img src="https://static.wixstatic.com/media/4a7749_bb3d8c890ebb4670b3777a8cb4f88c01~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/DestroyedHome.png" width="1000" height="500">
+
+Someone has destroyed your crops and your house has been broken into! You gasp and remember that your wife was back home so you rush to see if she is okay.
+
+You search every room and around the house. She is nowhere to be seen. What you did find is a note that said ,
+
+
+-insert japanese text here that says that they kidnapped her or something-
+
+
+
+It was the [[Yakuza]].
+
+
+:: tough day {"position":"1100,900","size":"100,100"}
+(live: 5s)[A few hours have passed by and there has not been any big sales and only one person bought a hat. ]
+
+(live: 6s)[You decide to pack up to head back home with the bills that you found near the poor village. ]
+
+(live: 8s)[When you reach for the last hat, a dog passes by and takes the hat with them.]
+
+(live: 9s)["That damn dog! You will not steal my merchandise to destroy it or make it a chew toy! My hats are a work of art!" 
+
+You decide to chase after the [[dog]].]
+
+(live: 10s)[<img src="https://static.wixstatic.com/media/4a7749_216a5483cb65494992cb932d5d45f5d7~mv2.png/v1/fill/w_136,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/starryai-0-1000651485-1-0-photo.png" width="500" height="500">]
+
+
+:: wife {"position":"1900,1400","size":"100,100"}
+You go to a grocery shop and buy as much food possible and walk back home.
+
+You arrive back at home with a smile on your face as a business was good today. You might have had only one customer but they gave your enough money for you and your wife.
+
+"Honey, I am home and I brought food!"
+
+Good ending 
+
+-end of change or entry for new event-
